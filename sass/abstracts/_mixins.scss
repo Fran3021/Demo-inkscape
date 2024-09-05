@@ -1,0 +1,65 @@
+//breakpoints
+@mixin breakpoint($bp) {
+  @if $bp == tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp == tablethorizontal {
+    @media (min-width: $bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp == desktop {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
+
+  @if $bp == desktopxl {
+    @media (min-width: $bp-desktop-xl) {
+      @content;
+    }
+  }
+  @if $bp == desktopxxl {
+    @media (min-width: $bp-desktop-xxl) {
+      @content;
+    }
+  }
+}
+
+//mixin de reset list
+@mixin reset-list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+//mixin de botones
+@mixin button-black{
+  text-decoration: none;
+  display: inline-block;
+  max-width: max-content;
+  padding: 17px 137px;
+  color: $white;
+  background-color: $black;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  max-height: max-content;
+}
+
+@mixin button-pink{
+  text-decoration: none;
+  display: inline-block;
+  max-width: max-content;
+  padding: 17px 137px;
+  color: #000000;
+  background-color: $pink;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  max-height: max-content;
+}

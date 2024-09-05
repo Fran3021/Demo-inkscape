@@ -1,0 +1,145 @@
+<!--Obligatorio para que el navegador lo lea perfecto en lenguaje HTML-->
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!--Aqui el titulo para los buscadores-->
+  <title>Proyecto de reforma de web</title>
+  
+  <!--Descripcion que sale al buscarlo en el navegador-->
+  <meta name="description" content="reforma">
+
+  <!--Palabras claves para los buscadores en navegadores-->
+  <meta name="keywords" content="reforma">
+
+  <!--Autor de la pagina-->
+  <meta name="autor" content="Fran">
+
+  <!--Añadimos la hoja de estilo CSS o SASS-->
+  <script defer type="module" src="/main.js"></script>
+
+  <!--Favicon de la pagina(icono)-->
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+  <!--Codificacion-->
+  <meta charset="UTF-8">
+
+  <!--Para que la web sea resposinve(El tamaño segun el dispositivo)-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Para algunos navegadores moviles(Color parte de arriba del HEADER)-->
+  <meta name="theme-color" content="FF0000">
+</head>
+
+<body>
+  <header class="header-principal">
+    <img class="image-header-mobile" src="img/image-header-mobile.png" alt="image-hero-mobile">
+    <div class="container-header">
+      <img src="icons/icon-logo.png" alt="icon-logo-principal">
+      <nav class="header-nav-mobile">
+        <ul class="menu-header-mobile">
+          <li class="icon-dropdown"><img src="icons/icon-menu-dropdown.svg" alt="icon-dropdpwn">
+            <ul class="menu-dropdown">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Descargar</a></li>
+              <li><a href="#">Noticias</a></li>
+              <li><a href="#">Comunidad</a></li>
+              <li><a href="#">Aprende</a></li>
+              <li><a href="#">Aporta</a></li>
+              <li><a href="#">Desarrollo</a></li>
+              <li><a href="#">Apóyanos</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><img src="icons/icon-user.svg" alt="icon-user"></a></li>
+        </ul>
+      </nav>
+      <nav class="header-nav-desktop">
+        <ul class="menu-header-desktop">
+          <li><a href="#">Inicio</a></li>
+          <li><img src="icons/icon-descargas.svg" alt=""><a href="#">Descargar</a></li>
+          <li><img src="icons/icon-noticias.svg" alt=""><a href="#">Noticias</a></li>
+          <li><img src="icons/icon-comunidad.svg" alt=""><a href="#">Comunidad</a></li>
+          <li><img src="icons/icon-aprende.svg" alt=""><a href="#">Aprende</a></li>
+          <li><img src="icons/icon-aporta.svg" alt=""><a href="#">Aporta</a></li>
+          <li><img src="icons/icon-desarrollo.svg" alt=""><a href="#">Desarrollo</a></li>
+          <li><img src="icons/icon-apoyanos.svg" alt=""><a href="#">Apóyanos</a></li>
+        </ul>
+        <ul class="user">
+          <li><a href="#"><img src="icons/icon-user.svg" alt=""></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main-principal">
+    <a href="#" class="button-black">Versiones</a>
+    <div class="users-collaborators">
+      <section class="usuarios">
+        <h2>Usario</h2>
+        <h3>Una potente herramienta libre de diseño</h3>
+        <p>Seas ilustrador, diseñador, maquetador web o simplemente alguien que necesita crear trabajos vectoriales, ¡Inkscape es para ti!</p>
+        <ul>
+          <li><img src="icons/icon-check.svg" alt=""></img>Herramientas flexibles de dibujo.</li>
+          <li><img src="icons/icon-check.svg" alt=""></img>Amplia compatibilidad de formatos de archivo.</li>
+          <li><img src="icons/icon-check.svg" alt=""></img>Potente herramienta de texto.</li>
+          <li><img src="icons/icon-check.svg" alt=""></img>Curvas, bezier y spiro.</li>
+        </ul>
+      </section>
+
+      <section class="colaboradores">
+        <h2>Colaboradores</h2>
+        <h3>Unete a nuestra creciente comunidad</h3>
+        <p>Siempre estamos dispuestos a recibir tu ayuda. Si sabes escribir código, puedes ayudarnos con el desarrollo, si no, tenemos muchas cosas más en las que nos puedes ayudar. Para más información, échale un vistazo a nuestra sección Contribuye en las siguientes Areas.</p>
+        <ul>
+          <li><img src="icons/icon-check-black.svg" alt=""></img>Working with Code</li>
+          <li><img src="icons/icon-check-violet.svg" alt=""></img>Non-Coding</li>
+          <li><img src="icons/icon-check-violet.svg" alt=""></img>Meetings</li>
+          <li><img src="icons/icon-check-violet.svg" alt=""></img>Community To-Do List</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="noticias">
+      <img class="image-noticias-mobile" src="img/image-hero-mobile.png" alt="">
+      <a href="#" class="button-pink">Noticias</a>
+    </div>
+    
+    <div class="options">
+      <article>
+        <img src="icons/icon-react.svg" alt="icon-react">
+        <h3>El programa</h3>
+        <p>¿Qué es y cómo lo puedo conseguir?</p>
+      </article>
+      <article>
+        <img src="icons/icon-characteristics.svg" alt="icon-characteristics">
+        <h3>Caracteristicas</h3>
+        <p>Conoce de lo que es capaz Inkscape.</p>
+      </article>
+      <article>
+        <img src="icons/icon-gallery.svg" alt="icon-gallery">
+        <h3>Galería</h3>
+        <p>Una muestra de creaciones de nuestra comunidad.</p>
+      </article>
+      <article>
+        <img src="icons/icon-learn.svg" alt="icon-learn">
+        <h3>Recursos para aprender</h3>
+        <p>Recursos para ayudarte a conseguir lo mejor de Inkscape.</p>
+      </article>
+    </div>
+  </main>
+  <footer class="footer-principal"> 
+    <div class="upper-footer">
+      <p>With thanks to:</p>
+      <p>Hinerangi</p>
+      <p>Courtenay</p>
+    </div>
+    <div class="lower-footer">
+      <p>Fastly</p>
+      <p>OSUOSL</p>
+      <p>Sponsors</p>
+      <p>The Authors</p>
+    </div>
+    <p>Inkscape is Free and Open Source Software licensed under the GPL.</p>
+  </footer>
+</body>
+</html>
+

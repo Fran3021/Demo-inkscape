@@ -1,0 +1,176 @@
+.main-principal{
+    position: relative;
+    .button-black{
+        @include button-black;
+        position: absolute;
+        top: -1%;
+        right: 8%;
+    }
+    .users-collaborators{
+        display: flex;
+        flex-direction: column;
+        .usuarios{
+            background-color: $dark-violet;
+            padding: 35px 35px 35px 20px;
+            h2{
+                font-size: 36px;
+                font-weight: bold;
+                color: $white;
+                margin-bottom: 10px;
+            }
+            h3{
+                font-size: 24px;
+                font-weight: normal;
+                color: $pink;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 18px;
+                font-weight: normal;
+                color: $white;
+                margin-bottom: 20px;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                margin-left: 50px;
+                li{
+                    font-size: 18px;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    gap: 3px;
+                    color: $white;
+                }
+            }
+        }
+        .colaboradores{
+            background-color: $pastel;
+            padding: 35px 35px 35px 20px;
+            h2{
+                font-size: 36px;
+                font-weight: bold;
+                color: $white;
+                margin-bottom: 10px;
+            }
+            h3{
+                font-size: 24px;
+                font-weight: normal;
+                color: $black;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 18px;
+                font-weight: normal;
+                color: $white;
+                margin-bottom: 20px;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                margin-left: 50px;
+                li{
+                    font-size: 18px;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    gap: 3px;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .noticias{
+        display: flex;
+        position: relative;
+        .image-noticias-mobile{
+            width: 100%;
+            flex: 1
+        }
+        .button-pink{
+            @include button-pink;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .options{
+        display: flex;
+        flex-direction: column;
+        article:nth-of-type(1){
+            text-align: center;
+            padding: 29px 67px 98px 68px;
+            background-color: $pink;
+            img{
+                margin-bottom: 15px;
+            }
+            h3{
+                font-size: 36px;
+                color: $dark-violet;
+                margin-bottom: 15px;
+                font-weight: bold;
+            }
+            p{
+                font-size: 24px;
+                color: $white;
+            }
+        }
+        article:nth-of-type(2){
+            text-align: center;
+            padding: 29px 57px 98px 58px;
+            background-color: $dark-violet;
+            img{
+                margin-bottom: 15px;
+            }
+            h3{
+                font-size: 36px;
+                color: $pink;
+                margin-bottom: 15px;
+                font-weight: bold;
+            }
+            p{
+                font-size: 24px;
+                color: $white;
+            }
+        }
+        article:nth-of-type(3){
+            text-align: center;
+            padding: 29px 57px 98px 58px;
+            background-color: $pastel;
+            img{
+                margin-bottom: 15px;
+            }
+            h3{
+                font-size: 36px;
+                color: $dark-violet;
+                margin-bottom: 15px;
+                font-weight: bold;
+            }
+            p{
+                font-size: 24px;
+                color: $white;
+            }
+        }
+        article:nth-of-type(4){
+            text-align: center;
+            padding: 29px 10px 98px 10px;
+            background-color: $black;
+            img{
+                margin-bottom: 15px;
+            }
+            h3{
+                font-size: 36px;
+                color: $pink;
+                margin-bottom: 15px;
+                font-weight: bold;
+            }
+            p{
+                font-size: 24px;
+                color: $white;
+            }
+        }
+    }
+}

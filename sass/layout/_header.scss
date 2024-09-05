@@ -1,0 +1,57 @@
+.header-principal{
+    padding-top: 35px;
+    position: relative;
+    margin-bottom: 330px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(black, 1),
+        rgba(black, 0.0)
+        );
+    .image-header-mobile{
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        width: 100%;
+    }
+    .container-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header-nav-mobile{
+            .menu-header-mobile{
+                display: flex;
+                align-items: center;
+                gap: 27px;
+                .icon-dropdown{
+                    position: relative;
+                    &:hover{
+                        cursor: pointer;
+                        .menu-dropdown{
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+                    .menu-dropdown{
+                        position: absolute;
+                        top: 100%;
+                        margin-top: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: opacity 2s ease, visibility 2s ease;
+                        a{
+                            text-decoration: none;
+                            color: $white-bold;
+                        }
+                    }
+                }
+            }
+        }
+        .header-nav-desktop{
+            display: none;
+        }
+    }
+}
+

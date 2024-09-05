@@ -1,0 +1,30 @@
+.footer-principal{
+    background-color: $dark-violet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+    .upper-footer{
+        display: flex;
+        gap: 17px;
+        p{
+            color: $white-light;
+            font-size: 18px;
+        }
+    }
+    .lower-footer{
+        display: flex;
+        gap: 17px;
+        margin-bottom: 20px;
+        p{
+            color: $white-light;
+            font-size: 18px;
+        }
+    }
+    p{
+        font-size: 12px;
+        color: $white-light;
+    }
+}
