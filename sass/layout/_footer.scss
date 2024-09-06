@@ -6,25 +6,50 @@
     align-items: center;
     gap: 5px;
     padding: 20px;
-    .upper-footer{
-        display: flex;
-        gap: 17px;
-        p{
-            color: $white-light;
-            font-size: 18px;
-        }
+    @include breakpoint(desktopxl){
+        padding-top: 40px;
     }
-    .lower-footer{
+    .uppers-lowers{
         display: flex;
-        gap: 17px;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 20px;
-        p{
-            color: $white-light;
-            font-size: 18px;
+        @include breakpoint(desktopxl){
+            flex-direction: row;
+        }
+        .upper-footer{
+            display: flex;
+            gap: 17px;
+            p{
+                color: $white-light;
+                font-size: 18px;
+                @include breakpoint(desktopxl){
+                    font-size: 24px;
+                }
+            }
+        }
+        .lower-footer{
+            display: flex;
+            gap: 17px;
+            p{
+                color: $white-light;
+                font-size: 18px;
+                @include breakpoint(desktopxl){
+                    font-size: 24px;
+                }
+            }
         }
     }
     p{
         font-size: 12px;
         color: $white-light;
+        @include breakpoint(desktopxl){
+            font-size: 18px;
+        }
+        @include breakpoint(desktopxl){
+            font-size: 24px;
+        }
     }
 }

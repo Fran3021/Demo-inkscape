@@ -34,6 +34,7 @@
 <body>
   <header class="header-principal">
     <img class="image-header-mobile" src="img/image-header-mobile.png" alt="image-hero-mobile">
+    <img class="image-header-desktop" src="img/image-header-desktop.png" alt="image-header-desktop">
     <div class="container-header">
       <img src="icons/icon-logo.png" alt="icon-logo-principal">
       <nav class="header-nav-mobile">
@@ -56,16 +57,20 @@
       <nav class="header-nav-desktop">
         <ul class="menu-header-desktop">
           <li><a href="#">Inicio</a></li>
-          <li><img src="icons/icon-descargas.svg" alt=""><a href="#">Descargar</a></li>
+          <li class="li-dropdown" ><img src="icons/icon-descargas.svg" alt=""><a href="#">Descargar</a>
+            <ul class="menu-dropdown-desktop">
+              <li><a href="#">Versión actual</a></li>
+              <li><a href="#">Próxima Versión (1.2)</a></li>
+              <li><a href="#">Extensiones</a></li>
+            </ul>
+          </li>
           <li><img src="icons/icon-noticias.svg" alt=""><a href="#">Noticias</a></li>
           <li><img src="icons/icon-comunidad.svg" alt=""><a href="#">Comunidad</a></li>
           <li><img src="icons/icon-aprende.svg" alt=""><a href="#">Aprende</a></li>
           <li><img src="icons/icon-aporta.svg" alt=""><a href="#">Aporta</a></li>
           <li><img src="icons/icon-desarrollo.svg" alt=""><a href="#">Desarrollo</a></li>
           <li><img src="icons/icon-apoyanos.svg" alt=""><a href="#">Apóyanos</a></li>
-        </ul>
-        <ul class="user">
-          <li><a href="#"><img src="icons/icon-user.svg" alt=""></a></li>
+          <li class="icon-users" ><a href="#"><img src="icons/icon-user.svg" alt=""></a></li>
         </ul>
       </nav>
     </div>
@@ -99,7 +104,8 @@
     </div>
 
     <div class="noticias">
-      <img class="image-noticias-mobile" src="img/image-hero-mobile.png" alt="">
+      <img class="image-hero-mobile" src="img/image-hero-mobile.png" alt="">
+      <img class="image-hero-desktop" src="img/image-hero-desktop.png" alt="image-hero-desktop">
       <a href="#" class="button-pink">Noticias</a>
     </div>
     
@@ -126,17 +132,19 @@
       </article>
     </div>
   </main>
-  <footer class="footer-principal"> 
-    <div class="upper-footer">
-      <p>With thanks to:</p>
-      <p>Hinerangi</p>
-      <p>Courtenay</p>
-    </div>
-    <div class="lower-footer">
-      <p>Fastly</p>
-      <p>OSUOSL</p>
-      <p>Sponsors</p>
-      <p>The Authors</p>
+  <footer class="footer-principal">
+    <div class="uppers-lowers">
+      <div class="upper-footer">
+        <p>With thanks to:</p>
+        <p>Hinerangi</p>
+        <p>Courtenay</p>
+      </div>
+      <div class="lower-footer">
+        <p>Fastly</p>
+        <p>OSUOSL</p>
+        <p>Sponsors</p>
+        <p>The Authors</p>
+      </div>
     </div>
     <p>Inkscape is Free and Open Source Software licensed under the GPL.</p>
   </footer>

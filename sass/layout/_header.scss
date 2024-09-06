@@ -4,20 +4,44 @@
     margin-bottom: 330px;
     background-image: linear-gradient(
         to bottom,
-        rgba(black, 1),
-        rgba(black, 0.0)
-        );
+        $black 10%,
+        $black 20%,
+        transparent 100%,
+    );
+    @include breakpoint(desktopxl){
+        padding-top: 0;
+        margin-bottom: 403px;
+    }
+    @include breakpoint (desktopxxl){
+        margin-bottom: 563px;
+    }
     .image-header-mobile{
         position: absolute;
         z-index: -1;
         top: 0;
         width: 100%;
+        @include breakpoint(desktopxl){
+            display: none;
+        }
+    }
+    .image-header-desktop{
+        display: none;
+        @include breakpoint(desktopxl){
+            display: block;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            width: 100%;
+        }
     }
     .container-header{
         display: flex;
         justify-content: space-between;
         align-items: center;
         .header-nav-mobile{
+            @include breakpoint(desktopxl){
+                display: none;
+            }
             .menu-header-mobile{
                 display: flex;
                 align-items: center;
@@ -51,6 +75,91 @@
         }
         .header-nav-desktop{
             display: none;
+            @include breakpoint(desktopxl){
+                display: block;
+                .menu-header-desktop{
+                    display: flex;
+                    gap: 28px;
+                    align-items: center;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        padding-top: 30px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        &:hover{
+                            a, img{
+                                filter: 
+                                invert(64%) 
+                                sepia(88%) 
+                                saturate(456%) 
+                                hue-rotate(325deg) 
+                                brightness(99%) 
+                                contrast(101%);
+                            }
+                        }
+                        a{
+                            text-decoration: none;
+                            color: $white;
+                            font-weight: bold;
+                            @include breakpoint(desktopxxl){
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    .li-dropdown{
+                        position: relative;
+                        transition: background 2s ease;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &:hover{
+                            cursor: pointer;
+                            background-color: $black;
+                            .menu-dropdown-desktop{
+                                opacity: 1;
+                                visibility: visible;
+                                background-image: linear-gradient(
+                                    to bottom,
+                                    $black 0%,
+                                    $black 10%,
+                                    transparent 100%,
+                                );
+                            }
+                        }
+                        .menu-dropdown-desktop{
+                            position: absolute;
+                            top: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 15px;
+                            opacity: 0;
+                            padding-bottom: 100px;
+                            visibility: hidden;
+                            padding-top: 20px;
+                            transition: opacity 2s ease, visibility 2s ease, background 2s ease;
+                            background-image: linear-gradient(
+                                to bottom,
+                                $black 0%,
+                                $black 10%,
+                                transparent 100%,
+                            );
+                            li{
+                                padding-top: 0px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                .icon-users{
+                    @include breakpoint(desktopxxl){
+                        margin-left: 200px;
+                    }
+                }
+            }
         }
     }
 }

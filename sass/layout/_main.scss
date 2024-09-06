@@ -5,13 +5,36 @@
         position: absolute;
         top: -1%;
         right: 8%;
+        @include breakpoint(tablet){
+            right: 25%;
+        }
+        @include breakpoint(tablethorizontal){
+            right: 32%;
+        }
+        @include breakpoint(desktop){
+            right: 35%;
+        }
+        @include breakpoint(desktopxl){
+            right: 38%;
+        }
+        @include breakpoint(desktopxxl){
+            top: -2%;
+            right: 41%;
+        }
     }
     .users-collaborators{
         display: flex;
         flex-direction: column;
+        @include breakpoint(desktopxl){
+            flex-direction: row;
+        }
         .usuarios{
             background-color: $dark-violet;
             padding: 35px 35px 35px 20px;
+            @include breakpoint(desktopxl){
+                width: 50%;
+                padding: 51px 69px 31px 69px;
+            }
             h2{
                 font-size: 36px;
                 font-weight: bold;
@@ -29,12 +52,21 @@
                 font-weight: normal;
                 color: $white;
                 margin-bottom: 20px;
+                @include breakpoint(desktopxl){
+                    font-size: 14px;
+                }
+                @include breakpoint(desktopxxl){
+                    font-size: 18px;
+                }
             }
             ul{
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
                 margin-left: 50px;
+                @include breakpoint(desktopxl){
+                    margin-left: 125px;
+                }
                 li{
                     font-size: 18px;
                     font-weight: bold;
@@ -42,35 +74,61 @@
                     align-items: center;
                     gap: 3px;
                     color: $white;
+                    @include breakpoint(desktopxl){
+                        font-size: 14px;
+                    }
+                    @include breakpoint(desktopxxl){
+                        font-size: 18px;
+                    }
                 }
             }
         }
         .colaboradores{
             background-color: $pastel;
             padding: 35px 35px 35px 20px;
+            @include breakpoint(desktopxl){
+                width: 50%;
+                padding: 51px 69px;
+            }
             h2{
                 font-size: 36px;
                 font-weight: bold;
                 color: $white;
                 margin-bottom: 10px;
+                @include breakpoint(desktopxl){
+                    margin-bottom: 0;
+                }
             }
             h3{
                 font-size: 24px;
                 font-weight: normal;
                 color: $black;
                 margin-bottom: 10px;
+                @include breakpoint(desktopxl){
+                    margin-bottom: 5px;
+                }
             }
             p{
                 font-size: 18px;
                 font-weight: normal;
                 color: $white;
                 margin-bottom: 20px;
+                @include breakpoint(desktopxl){
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                }
+                @include breakpoint(desktopxxl){
+                    font-size: 18px;
+                }
             }
             ul{
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
                 margin-left: 50px;
+                @include breakpoint(desktopxl){
+                    margin-left: 125px;
+                }
                 li{
                     font-size: 18px;
                     font-weight: bold;
@@ -78,6 +136,12 @@
                     align-items: center;
                     gap: 3px;
                     color: $white;
+                    @include breakpoint(desktopxl){
+                        font-size: 14px;
+                    }
+                    @include breakpoint(desktopxxl){
+                        font-size: 18px;
+                    }
                 }
             }
         }
@@ -85,9 +149,20 @@
     .noticias{
         display: flex;
         position: relative;
-        .image-noticias-mobile{
+        .image-hero-mobile{
             width: 100%;
-            flex: 1
+            flex: 1;
+            @include breakpoint(desktopxl){
+                display: none
+            }
+        }
+        .image-hero-desktop{
+            display: none;
+            @include breakpoint(desktopxl){
+                display: block;
+                width: 100%;
+                flex: 1;
+            }
         }
         .button-pink{
             @include button-pink;
@@ -100,10 +175,16 @@
     .options{
         display: flex;
         flex-direction: column;
+        @include breakpoint(desktopxl){
+            flex-direction: row;
+        }
         article:nth-of-type(1){
             text-align: center;
             padding: 29px 67px 98px 68px;
             background-color: $pink;
+            @include breakpoint(desktopxl){
+                width: 25%;
+            }
             img{
                 margin-bottom: 15px;
             }
@@ -112,16 +193,31 @@
                 color: $dark-violet;
                 margin-bottom: 15px;
                 font-weight: bold;
+                @include breakpoint(desktopxl){
+                    font-size: 30px;
+                }
+                @include breakpoint(desktopxxl){
+                    font-size: 36px;
+                }
             }
             p{
                 font-size: 24px;
                 color: $white;
+                @include breakpoint(desktopxl){
+                    font-size: 18px;
+                }
+                @include breakpoint(desktopxxl){
+                    font-size: 24px;
+                }
             }
         }
         article:nth-of-type(2){
             text-align: center;
             padding: 29px 57px 98px 58px;
             background-color: $dark-violet;
+            @include breakpoint(desktopxl){
+                width: 25%;
+            }
             img{
                 margin-bottom: 15px;
             }
@@ -130,16 +226,31 @@
                 color: $pink;
                 margin-bottom: 15px;
                 font-weight: bold;
+                @include breakpoint(desktopxl){
+                    font-size: 30px;
+                }
+                @include breakpoint(desktopxxl){
+                    font-size: 36px;
+                }
             }
             p{
                 font-size: 24px;
                 color: $white;
+                @include breakpoint(desktopxl){
+                    font-size: 18px;
+                }
+                @include breakpoint(desktopxxl){
+                    font-size: 24px;
+                }
             }
         }
         article:nth-of-type(3){
             text-align: center;
             padding: 29px 57px 98px 58px;
             background-color: $pastel;
+            @include breakpoint(desktopxl){
+                width: 25%;
+            }
             img{
                 margin-bottom: 15px;
             }
@@ -148,16 +259,31 @@
                 color: $dark-violet;
                 margin-bottom: 15px;
                 font-weight: bold;
+                @include breakpoint(desktopxl){
+                    font-size: 30px;
+                }
+                @include breakpoint(desktopxxl){
+                    font-size: 36px;
+                }
             }
             p{
                 font-size: 24px;
                 color: $white;
+                @include breakpoint(desktopxl){
+                    font-size: 18px;
+                }
+                @include breakpoint(desktopxxl){
+                    font-size: 24px;
+                }
             }
         }
         article:nth-of-type(4){
             text-align: center;
             padding: 29px 10px 98px 10px;
             background-color: $black;
+            @include breakpoint(desktopxl){
+                width: 25%;
+            }
             img{
                 margin-bottom: 15px;
             }
@@ -166,10 +292,22 @@
                 color: $pink;
                 margin-bottom: 15px;
                 font-weight: bold;
+                @include breakpoint(desktopxl){
+                    font-size: 30px;
+                }
+                @include breakpoint(desktopxxl){
+                    font-size: 36px;
+                }
             }
             p{
                 font-size: 24px;
                 color: $white;
+                @include breakpoint(desktopxl){
+                    font-size: 18px;
+                }
+                @include breakpoint(desktopxxl){
+                    font-size: 24px;
+                }
             }
         }
     }
