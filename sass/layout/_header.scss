@@ -8,9 +8,12 @@
         $black 20%,
         transparent 100%,
     );
+    @include breakpoint (desktop){
+        padding-top: 0;
+    }
     @include breakpoint(desktopxl){
         padding-top: 0;
-        margin-bottom: 403px;
+        margin-bottom: 402px;
     }
     @include breakpoint (desktopxxl){
         margin-bottom: 563px;
@@ -26,7 +29,7 @@
     }
     .image-header-desktop{
         display: none;
-        @include breakpoint(desktopxl){
+        @include breakpoint(desktop){
             display: block;
             position: absolute;
             z-index: -1;
@@ -39,7 +42,7 @@
         justify-content: space-between;
         align-items: center;
         .header-nav-mobile{
-            @include breakpoint(desktopxl){
+            @include breakpoint(desktop){
                 display: none;
             }
             .menu-header-mobile{
@@ -75,11 +78,11 @@
         }
         .header-nav-desktop{
             display: none;
-            @include breakpoint(desktopxl){
+            @include breakpoint(desktop){
                 display: block;
                 .menu-header-desktop{
                     display: flex;
-                    gap: 28px;
+                    gap: 18px;
                     align-items: center;
                     li{
                         display: flex;
@@ -103,6 +106,12 @@
                             text-decoration: none;
                             color: $white;
                             font-weight: bold;
+                            @include breakpoint(desktop){
+                                font-size: 13px;
+                            }
+                            @include breakpoint(desktopxl){
+                                font-size: 15px;
+                            }
                             @include breakpoint(desktopxxl){
                                 font-size: 18px;
                             }

@@ -6,8 +6,11 @@
     align-items: center;
     gap: 5px;
     padding: 20px;
-    @include breakpoint(desktopxl){
+    @include breakpoint(desktop){
         padding-top: 40px;
+    }
+    @include breakpoint(desktopxxl){
+        padding-top: 60px;
     }
     .uppers-lowers{
         display: flex;
@@ -16,7 +19,7 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 20px;
-        @include breakpoint(desktopxl){
+        @include breakpoint(desktop){
             flex-direction: row;
         }
         .upper-footer{
@@ -25,7 +28,7 @@
             p{
                 color: $white-light;
                 font-size: 18px;
-                @include breakpoint(desktopxl){
+                @include breakpoint(desktop){
                     font-size: 24px;
                 }
             }
@@ -36,7 +39,7 @@
             p{
                 color: $white-light;
                 font-size: 18px;
-                @include breakpoint(desktopxl){
+                @include breakpoint(desktop){
                     font-size: 24px;
                 }
             }
@@ -45,10 +48,10 @@
     p{
         font-size: 12px;
         color: $white-light;
-        @include breakpoint(desktopxl){
+        @include breakpoint(desktop){
             font-size: 18px;
         }
-        @include breakpoint(desktopxl){
+        @include breakpoint(desktopxxl){
             font-size: 24px;
         }
     }
